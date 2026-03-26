@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60">
+  <defs>
+    <linearGradient id="planeGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#f0d060"/>
+    </linearGradient>
+  </defs>
+  <!-- WWII Fighter Silhouette -->
+  <path d="M15 30 L25 28 L40 26 L42 18 L44 26 L75 24 L78 15 L80 24 L90 23 L90 27 L85 28 L85 32 L90 33 L90 37 L80 36 L78 45 L75 36 L44 34 L42 42 L40 34 L25 32 L15 30Z" 
+        fill="url(#planeGold)" opacity="0.9"/>
+  <!-- Propeller -->
+  <ellipse cx="13" cy="30" rx="2" ry="8" fill="#d4af37" opacity="0.6"/>
+</svg>

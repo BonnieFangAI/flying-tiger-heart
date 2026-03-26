@@ -116,7 +116,7 @@ function initBlindBox() {
                 
                 // Fill result
                 const back = box.querySelector('.blindbox-back');
-                back.querySelector('.blindbox-result-icon').textContent = '✈️';
+                // plane image already set via CSS background
                 back.querySelector('.blindbox-result-tier').textContent = plane.tier;
                 back.querySelector('.blindbox-result-tier').style.color = plane.color;
                 back.querySelector('.blindbox-result-name').textContent = plane.models[0];
@@ -334,7 +334,7 @@ function showPlaneDetail(el) {
     
     detail.innerHTML = `
         <div class="plane-detail-header" style="border-top: 4px solid ${plane.color}">
-            <div class="plane-detail-icon">✈️</div>
+            <div class="plane-detail-img"><img src="assets/images/planes.svg" alt="${plane.tier}"></div>
             <h2 style="color: ${plane.color}">${plane.tier}</h2>
             <div class="plane-detail-badge">${plane.models.join(' / ')}</div>
         </div>

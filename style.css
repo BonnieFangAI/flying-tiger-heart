@@ -408,9 +408,16 @@ a:hover {
     transform: translateY(-4px);
 }
 
-.about-icon {
-    font-size: 40px;
-    margin-bottom: 20px;
+.about-icon-svg {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 20px;
+    color: var(--gold);
+}
+
+.about-icon-svg svg {
+    width: 100%;
+    height: 100%;
 }
 
 .about-card h3 {
@@ -426,62 +433,99 @@ a:hover {
     line-height: 1.7;
 }
 
-/* ===== Gameplay Section ===== */
-.gameplay-steps {
+/* ===== Gameplay Flow ===== */
+.gameplay-flow {
     display: flex;
-    flex-direction: column;
-    gap: 80px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 64px;
+    flex-wrap: wrap;
 }
 
-.step {
-    display: grid;
-    grid-template-columns: auto 1fr 1fr;
-    gap: 40px;
-    align-items: center;
+.flow-step {
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
+    text-align: center;
+    padding: 24px 16px;
 }
 
-.step-reverse {
-    direction: rtl;
-}
-
-.step-reverse > * {
-    direction: ltr;
-}
-
-.step-number {
+.flow-num {
     font-family: var(--font-display);
-    font-size: 72px;
-    font-weight: 900;
-    color: rgba(212, 175, 55, 0.15);
-    line-height: 1;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--gold-dark);
+    letter-spacing: 2px;
+    margin-bottom: 16px;
 }
 
-.step-content h3 {
-    font-family: var(--font-display);
-    font-size: 24px;
+.flow-icon-wrap {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 16px;
     color: var(--gold);
-    margin-bottom: 12px;
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
 }
 
-.step-content p {
-    font-size: 15px;
+.flow-icon-wrap svg {
+    width: 100%;
+    height: 100%;
+}
+
+.flow-step h3 {
+    font-family: var(--font-display);
+    font-size: 18px;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.flow-step p {
+    font-size: 13px;
     color: var(--text-secondary);
     line-height: 1.7;
 }
 
-.step-visual {
-    border-radius: 12px;
-    overflow: hidden;
+.flow-connector {
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold-dark), transparent);
+    margin-top: 72px;
+    flex-shrink: 0;
+}
+
+.gameplay-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gf-item {
+    padding: 24px;
+    background: var(--dark-surface);
     border: 1px solid var(--dark-border);
+    border-radius: 12px;
+    text-align: center;
 }
 
-.step-visual img {
-    width: 100%;
-    transition: transform 0.5s;
+.gf-item h4 {
+    font-family: var(--font-display);
+    font-size: 14px;
+    color: var(--gold);
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
 }
 
-.step-visual:hover img {
-    transform: scale(1.03);
+.gf-item p {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
 }
 
 /* ===== Fighter Planes Section ===== */
@@ -534,10 +578,18 @@ a:hover {
     margin-bottom: 12px;
 }
 
-.plane-icon {
-    font-size: 32px;
-    margin-bottom: 12px;
-    opacity: 0.7;
+.plane-img-wrap {
+    width: 64px;
+    height: 40px;
+    margin: 0 auto 12px;
+    opacity: 0.85;
+}
+
+.plane-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 8px rgba(212,175,55,0.3));
 }
 
 .plane-return span {
@@ -699,9 +751,16 @@ a:hover {
     text-align: center;
 }
 
-.system-icon {
-    font-size: 40px;
-    margin-bottom: 16px;
+.system-icon-svg {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 16px;
+    color: var(--gold);
+}
+
+.system-icon-svg svg {
+    width: 100%;
+    height: 100%;
 }
 
 .system-card h3 {
@@ -1251,8 +1310,24 @@ a:hover {
 }
 
 .wallet-option-icon {
-    font-size: 24px;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: var(--dark-card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--gold);
 }
+
+.woi-phantom { background: #ab9ff2; }
+.woi-phantom::after { content: 'P'; color: #fff; font-size: 16px; font-weight: 700; }
+.woi-solflare { background: #fc7227; }
+.woi-solflare::after { content: 'S'; color: #fff; font-size: 16px; font-weight: 700; }
+.woi-backpack { background: #e33e3f; }
+.woi-backpack::after { content: 'B'; color: #fff; font-size: 16px; font-weight: 700; }
 
 .wallet-option-name {
     font-weight: 600;
@@ -1429,9 +1504,27 @@ a:hover {
     position: relative;
 }
 
-.blindbox-icon {
-    font-size: 48px;
+.blindbox-icon-box {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--gold);
+    border-radius: 8px;
     margin-bottom: 8px;
+    position: relative;
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.blindbox-icon-box::before {
+    content: '?';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 28px;
+    color: var(--gold);
+    font-weight: 700;
 }
 
 .blindbox-label {
@@ -1459,8 +1552,11 @@ a:hover {
     transform: rotateY(0);
 }
 
-.blindbox-result-icon {
-    font-size: 40px;
+.blindbox-result-img {
+    width: 60px;
+    height: 40px;
+    background: url('assets/images/planes.svg') center/contain no-repeat;
+    filter: drop-shadow(0 2px 8px rgba(212,175,55,0.4));
 }
 
 .blindbox-result-tier {
@@ -1565,9 +1661,17 @@ a:hover {
     border-radius: 12px 12px 0 0;
 }
 
-.plane-detail-icon {
-    font-size: 48px;
-    margin-bottom: 12px;
+.plane-detail-img {
+    width: 80px;
+    height: 50px;
+    margin: 0 auto 12px;
+}
+
+.plane-detail-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 12px rgba(212,175,55,0.4));
 }
 
 .plane-detail-header h2 {
@@ -1717,6 +1821,27 @@ a:hover {
 }
 
 /* ===== Pre-sale Enhancements ===== */
+.presale-rank-stars {
+    font-size: 32px;
+    color: var(--gold);
+    margin-bottom: 12px;
+    letter-spacing: 4px;
+}
+
+.success-check {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(34, 197, 94, 0.1);
+    border: 2px solid #22c55e;
+    color: #22c55e;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
 .presale-progress {
     height: 4px;
     background: var(--dark-surface);
@@ -1860,9 +1985,34 @@ a:hover {
 }
 
 /* ===== Responsive Additions ===== */
+@media (max-width: 1024px) {
+    .gameplay-features {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (max-width: 768px) {
     .wallet-btn {
         display: none;
+    }
+
+    .gameplay-flow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flow-connector {
+        width: 2px;
+        height: 24px;
+        margin: 0;
+    }
+
+    .flow-step {
+        max-width: 100%;
+    }
+
+    .gameplay-features {
+        grid-template-columns: 1fr;
     }
 
     .countdown-num {

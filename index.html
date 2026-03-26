@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Language Selector & Nav -->
+    <!-- Nav -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <span class="logo-icon">✦</span>
+                <span class="logo-icon">FTT</span>
                 <span class="logo-text">FLYING TIGER HEART</span>
             </a>
             <div class="nav-links" id="navLinks">
@@ -34,10 +34,8 @@
                     <button class="lang-btn" data-lang="ja">日本語</button>
                     <button class="lang-btn" data-lang="ko">한국어</button>
                 </div>
-                <button class="wallet-btn" id="walletBtn" data-i18n="nav.wallet">
-                    <span class="wallet-icon">◈</span> Connect Wallet
-                </button>
-                <button class="mobile-menu-btn" id="menuBtn">☰</button>
+                <button class="wallet-btn" id="walletBtn" data-i18n="nav.wallet">Connect Wallet</button>
+                <button class="mobile-menu-btn" id="menuBtn">&#9776;</button>
             </div>
         </div>
     </nav>
@@ -45,22 +43,22 @@
     <!-- Wallet Modal -->
     <div class="modal-overlay" id="walletModal">
         <div class="modal">
-            <button class="modal-close" id="walletModalClose">✕</button>
+            <button class="modal-close" id="walletModalClose">&times;</button>
             <h3 data-i18n="wallet.title">Connect Your Wallet</h3>
             <p class="modal-desc" data-i18n="wallet.desc">Choose a wallet to connect to Flying Tiger Heart</p>
             <div class="wallet-options">
                 <button class="wallet-option" data-wallet="phantom">
-                    <span class="wallet-option-icon">👻</span>
+                    <span class="wallet-option-icon woi-phantom"></span>
                     <span class="wallet-option-name">Phantom</span>
                     <span class="wallet-option-tag" data-i18n="wallet.recommended">Recommended</span>
                 </button>
                 <button class="wallet-option" data-wallet="solflare">
-                    <span class="wallet-option-icon">☀️</span>
+                    <span class="wallet-option-icon woi-solflare"></span>
                     <span class="wallet-option-name">Solflare</span>
                     <span class="wallet-option-tag">Solana</span>
                 </button>
                 <button class="wallet-option" data-wallet="backpack">
-                    <span class="wallet-option-icon">🎒</span>
+                    <span class="wallet-option-icon woi-backpack"></span>
                     <span class="wallet-option-name">Backpack</span>
                     <span class="wallet-option-tag">Multi-chain</span>
                 </button>
@@ -83,10 +81,9 @@
         <div class="hero-content">
             <div class="hero-badge" data-i18n="hero.badge">WWII 80th Anniversary Commemorative</div>
             <h1 class="hero-title">
-                <span class="hero-title-en" data-i18n="hero.title">FLYING TIGER<br>HEART</span>
+                <span data-i18n="hero.title">FLYING TIGER<br>HEART</span>
             </h1>
             <p class="hero-subtitle" data-i18n="hero.subtitle">A Web3 strategy game restoring real history.<br>Collect NFT fighter planes. Complete daily missions. Earn FTT.</p>
-            
             <div class="hero-cta">
                 <a href="#presale" class="btn btn-primary" data-i18n="hero.cta1">Join Pre-Registration</a>
                 <a href="#blindbox" class="btn btn-outline" data-i18n="hero.cta2">Try Blind Box Demo</a>
@@ -122,17 +119,17 @@
             </div>
             <div class="about-grid">
                 <div class="about-card">
-                    <div class="about-icon">🛩️</div>
+                    <div class="about-icon-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h2l3-9 4 18 3-9h6"/></svg></div>
                     <h3 data-i18n="about.card1.title">The Flying Tigers</h3>
                     <p data-i18n="about.card1.desc">From 1941 to 1945, the American Volunteer Group, later the 14th Air Force, achieved legendary victories with their iconic shark-mouth P-40 Warhawks, scoring a 9:0 victory in their very first engagement.</p>
                 </div>
                 <div class="about-card">
-                    <div class="about-icon">⛰️</div>
+                    <div class="about-icon-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
                     <h3 data-i18n="about.card2.title">The Hump Route</h3>
                     <p data-i18n="about.card2.desc">Over 800km of death-defying flights across the Himalayas. 563 aircraft lost. 1,500+ lives sacrificed. 700,000 tons of supplies delivered over 3 years — a testament to unbreakable courage.</p>
                 </div>
                 <div class="about-card">
-                    <div class="about-icon">🤝</div>
+                    <div class="about-icon-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21a9 9 0 100-18 9 9 0 000 18z"/><path d="M12 7v5l3 3"/></svg></div>
                     <h3 data-i18n="about.card3.title">Friendship Endures</h3>
                     <p data-i18n="about.card3.desc">As President Xi Jinping said in 2023: "The Chinese people have not forgotten the Flying Tigers." This game honors that enduring bond between China and the United States.</p>
                 </div>
@@ -140,7 +137,7 @@
         </div>
     </section>
 
-    <!-- Gameplay Section -->
+    <!-- Gameplay Section - TEXT ONLY, no screenshots -->
     <section class="section" id="gameplay">
         <div class="container">
             <div class="section-header">
@@ -148,46 +145,51 @@
                 <h2 class="section-title" data-i18n="gameplay.title">How It Works</h2>
                 <p class="section-desc" data-i18n="gameplay.desc">Purchase blind boxes, collect fighter planes, form squadrons, and complete daily missions on a 1:1,000,000 scale map of mainland China to earn FTT tokens.</p>
             </div>
-            <div class="gameplay-steps">
-                <div class="step">
-                    <div class="step-number">01</div>
-                    <div class="step-content">
-                        <h3 data-i18n="gameplay.step1.title">Purchase Blind Boxes</h3>
-                        <p data-i18n="gameplay.step1.desc">80 USDT per set of 3 fighter planes. Each purchase includes a 5U donation to Flying Tiger heritage institutions. 10-pull guarantees at least one Blue-tier or above plane.</p>
-                    </div>
-                    <div class="step-visual">
-                        <img src="assets/images/gameplay-intro.jpg" alt="Blind Box System" loading="lazy">
-                    </div>
+            <div class="gameplay-flow">
+                <div class="flow-step">
+                    <div class="flow-num">01</div>
+                    <div class="flow-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M8 12h8"/></svg></div>
+                    <h3 data-i18n="gameplay.step1.title">Purchase Blind Boxes</h3>
+                    <p data-i18n="gameplay.step1.desc">80 USDT per set of 3 fighter planes. Each purchase includes a 5U donation to Flying Tiger heritage institutions. 10-pull guarantees at least one Blue-tier or above plane.</p>
                 </div>
-                <div class="step step-reverse">
-                    <div class="step-number">02</div>
-                    <div class="step-content">
-                        <h3 data-i18n="gameplay.step2.title">Open & Discover</h3>
-                        <p data-i18n="gameplay.step2.desc">Unbox to discover fighter planes across 7 quality tiers — from Falcon to Legendary. Each box also yields fuel cards, ammunition cards, and armor cards to enhance your fleet.</p>
-                    </div>
-                    <div class="step-visual">
-                        <img src="assets/images/gameplay-details.jpg" alt="Opening Mechanics" loading="lazy">
-                    </div>
+                <div class="flow-connector"></div>
+                <div class="flow-step">
+                    <div class="flow-num">02</div>
+                    <div class="flow-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 8V5a2 2 0 00-2-2H5a2 2 0 00-2 2v3"/><path d="M3 16v3a2 2 0 002 2h14a2 2 0 002-2v-3"/><path d="M12 3v18"/><circle cx="12" cy="12" r="3"/></svg></div>
+                    <h3 data-i18n="gameplay.step2.title">Open and Discover</h3>
+                    <p data-i18n="gameplay.step2.desc">Unbox to discover fighter planes across 7 quality tiers — from Falcon to Legendary. Each box also yields fuel cards, ammunition cards, and armor cards to enhance your fleet.</p>
                 </div>
-                <div class="step">
-                    <div class="step-number">03</div>
-                    <div class="step-content">
-                        <h3 data-i18n="gameplay.step3.title">Form Your Squadron</h3>
-                        <p data-i18n="gameplay.step3.desc">Assemble your fighter planes into combat squadrons. Accept rank promotions, enter the battle map, and choose daily missions suited to your fleet's capabilities.</p>
-                    </div>
-                    <div class="step-visual">
-                        <img src="assets/images/game-preview.png" alt="Squadron Formation" loading="lazy">
-                    </div>
+                <div class="flow-connector"></div>
+                <div class="flow-step">
+                    <div class="flow-num">03</div>
+                    <div class="flow-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+                    <h3 data-i18n="gameplay.step3.title">Form Your Squadron</h3>
+                    <p data-i18n="gameplay.step3.desc">Assemble your fighter planes into combat squadrons. Accept rank promotions, enter the battle map, and choose daily missions suited to your fleet's capabilities.</p>
                 </div>
-                <div class="step step-reverse">
-                    <div class="step-number">04</div>
-                    <div class="step-content">
-                        <h3 data-i18n="gameplay.step4.title">Complete Missions & Earn</h3>
-                        <p data-i18n="gameplay.step4.desc">Dispatch planes on auto-combat missions. When the countdown ends, collect FTT rewards. Higher military ranks and corps levels multiply your earnings significantly.</p>
-                    </div>
-                    <div class="step-visual">
-                        <img src="assets/images/game-missions.png" alt="Daily Missions" loading="lazy">
-                    </div>
+                <div class="flow-connector"></div>
+                <div class="flow-step">
+                    <div class="flow-num">04</div>
+                    <div class="flow-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
+                    <h3 data-i18n="gameplay.step4.title">Complete Missions and Earn</h3>
+                    <p data-i18n="gameplay.step4.desc">Dispatch planes on auto-combat missions. When the countdown ends, collect FTT rewards. Higher military ranks and corps levels multiply your earnings significantly.</p>
+                </div>
+            </div>
+            <div class="gameplay-features">
+                <div class="gf-item">
+                    <h4 data-i18n="gameplay.f1.title">Real-Scale Map</h4>
+                    <p data-i18n="gameplay.f1.desc">1:1,000,000 scale map of mainland China with daily refreshing airspace missions and dynamic task system.</p>
+                </div>
+                <div class="gf-item">
+                    <h4 data-i18n="gameplay.f2.title">Dual Economy</h4>
+                    <p data-i18n="gameplay.f2.desc">Seven quality tiers of fighter jets control sovereign economic output. Military rank and corps drive dynamic revenue models.</p>
+                </div>
+                <div class="gf-item">
+                    <h4 data-i18n="gameplay.f3.title">Solana Blockchain</h4>
+                    <p data-i18n="gameplay.f3.desc">All transaction data encrypted through zero-knowledge proofs. FTT output complies with Solana security standards.</p>
+                </div>
+                <div class="gf-item">
+                    <h4 data-i18n="gameplay.f4.title">In-Game Marketplace</h4>
+                    <p data-i18n="gameplay.f4.desc">The Flying Tiger Arsenal — trade NFT fighter planes and rare war materials. Unlockable at Lieutenant rank and above.</p>
                 </div>
             </div>
         </div>
@@ -203,43 +205,40 @@
             </div>
             <div class="blindbox-area">
                 <div class="blindbox-container" id="blindboxContainer">
-                    <!-- Box 1 -->
                     <div class="blindbox" data-box="1">
                         <div class="blindbox-front">
                             <div class="blindbox-glow"></div>
-                            <div class="blindbox-icon">📦</div>
+                            <div class="blindbox-icon-box"></div>
                             <div class="blindbox-label" data-i18n="blindbox.click">Click to Open</div>
                         </div>
                         <div class="blindbox-back">
-                            <div class="blindbox-result-icon"></div>
+                            <div class="blindbox-result-img"></div>
                             <div class="blindbox-result-tier"></div>
                             <div class="blindbox-result-name"></div>
                             <div class="blindbox-result-ftt"></div>
                         </div>
                     </div>
-                    <!-- Box 2 -->
                     <div class="blindbox" data-box="2">
                         <div class="blindbox-front">
                             <div class="blindbox-glow"></div>
-                            <div class="blindbox-icon">📦</div>
+                            <div class="blindbox-icon-box"></div>
                             <div class="blindbox-label" data-i18n="blindbox.click">Click to Open</div>
                         </div>
                         <div class="blindbox-back">
-                            <div class="blindbox-result-icon"></div>
+                            <div class="blindbox-result-img"></div>
                             <div class="blindbox-result-tier"></div>
                             <div class="blindbox-result-name"></div>
                             <div class="blindbox-result-ftt"></div>
                         </div>
                     </div>
-                    <!-- Box 3 -->
                     <div class="blindbox" data-box="3">
                         <div class="blindbox-front">
                             <div class="blindbox-glow"></div>
-                            <div class="blindbox-icon">📦</div>
+                            <div class="blindbox-icon-box"></div>
                             <div class="blindbox-label" data-i18n="blindbox.click">Click to Open</div>
                         </div>
                         <div class="blindbox-back">
-                            <div class="blindbox-result-icon"></div>
+                            <div class="blindbox-result-img"></div>
                             <div class="blindbox-result-tier"></div>
                             <div class="blindbox-result-name"></div>
                             <div class="blindbox-result-ftt"></div>
@@ -247,7 +246,7 @@
                     </div>
                 </div>
                 <div class="blindbox-controls">
-                    <button class="btn btn-primary" id="blindboxReset" data-i18n="blindbox.reset">🔄 New Set (80 USDT)</button>
+                    <button class="btn btn-primary" id="blindboxReset" data-i18n="blindbox.reset">New Set (80 USDT)</button>
                     <div class="blindbox-stats" id="blindboxStats">
                         <span data-i18n="blindbox.opened">Opened:</span> <strong id="boxOpenCount">0</strong>/3
                         &nbsp;|&nbsp;
@@ -272,88 +271,67 @@
             </div>
             <div class="planes-grid">
                 <div class="plane-card tier-1" data-tier="falcon" onclick="showPlaneDetail(this)">
+                    <div class="plane-img-wrap"><img src="assets/images/planes.svg" alt="Falcon" class="plane-img"></div>
                     <div class="plane-tier" data-i18n="planes.t1.tier">FALCON</div>
-                    <div class="plane-icon">✈</div>
                     <div class="plane-stats">
                         <div class="plane-return"><span>125%</span> <small data-i18n="planes.return">Return</small></div>
                         <div class="plane-ftt">10,000 FTT</div>
                     </div>
-                    <div class="plane-rarity">
-                        <div class="rarity-bar" style="width: 80%"></div>
-                        <span data-i18n="planes.common">Common</span>
-                    </div>
+                    <div class="plane-rarity"><div class="rarity-bar" style="width: 80%"></div><span data-i18n="planes.common">Common</span></div>
                 </div>
                 <div class="plane-card tier-2" data-tier="ironwing" onclick="showPlaneDetail(this)">
+                    <div class="plane-img-wrap"><img src="assets/images/planes.svg" alt="Iron Wing" class="plane-img"></div>
                     <div class="plane-tier" data-i18n="planes.t2.tier">IRON WING</div>
-                    <div class="plane-icon">✈</div>
                     <div class="plane-stats">
                         <div class="plane-return"><span>150%</span> <small data-i18n="planes.return">Return</small></div>
                         <div class="plane-ftt">30,000 FTT</div>
                     </div>
-                    <div class="plane-rarity">
-                        <div class="rarity-bar" style="width: 55%"></div>
-                        <span data-i18n="planes.uncommon">Uncommon</span>
-                    </div>
+                    <div class="plane-rarity"><div class="rarity-bar" style="width: 55%"></div><span data-i18n="planes.uncommon">Uncommon</span></div>
                 </div>
                 <div class="plane-card tier-3" data-tier="elite" onclick="showPlaneDetail(this)">
+                    <div class="plane-img-wrap"><img src="assets/images/planes.svg" alt="Elite" class="plane-img"></div>
                     <div class="plane-tier" data-i18n="planes.t3.tier">ELITE</div>
-                    <div class="plane-icon">✈</div>
                     <div class="plane-stats">
                         <div class="plane-return"><span>180%</span> <small data-i18n="planes.return">Return</small></div>
                         <div class="plane-ftt">90,000 FTT</div>
                     </div>
-                    <div class="plane-rarity">
-                        <div class="rarity-bar" style="width: 35%"></div>
-                        <span data-i18n="planes.rare">Rare</span>
-                    </div>
+                    <div class="plane-rarity"><div class="rarity-bar" style="width: 35%"></div><span data-i18n="planes.rare">Rare</span></div>
                 </div>
                 <div class="plane-card tier-4" data-tier="glory" onclick="showPlaneDetail(this)">
+                    <div class="plane-img-wrap"><img src="assets/images/planes.svg" alt="Glory" class="plane-img"></div>
                     <div class="plane-tier" data-i18n="planes.t4.tier">GLORY</div>
-                    <div class="plane-icon">✈</div>
                     <div class="plane-stats">
                         <div class="plane-return"><span>200%</span> <small data-i18n="planes.return">Return</small></div>
                         <div class="plane-ftt">270,000 FTT</div>
                     </div>
-                    <div class="plane-rarity">
-                        <div class="rarity-bar" style="width: 20%"></div>
-                        <span data-i18n="planes.epic">Epic</span>
-                    </div>
+                    <div class="plane-rarity"><div class="rarity-bar" style="width: 20%"></div><span data-i18n="planes.epic">Epic</span></div>
                 </div>
                 <div class="plane-card tier-5" data-tier="hero" onclick="showPlaneDetail(this)">
+                    <div class="plane-img-wrap"><img src="assets/images/planes.svg" alt="Hero" class="plane-img"></div>
                     <div class="plane-tier" data-i18n="planes.t5.tier">HERO</div>
-                    <div class="plane-icon">✈</div>
                     <div class="plane-stats">
                         <div class="plane-return"><span>250%</span> <small data-i18n="planes.return">Return</small></div>
                         <div class="plane-ftt">810,000 FTT</div>
                     </div>
-                    <div class="plane-rarity">
-                        <div class="rarity-bar" style="width: 10%"></div>
-                        <span data-i18n="planes.legendary">Legendary</span>
-                    </div>
+                    <div class="plane-rarity"><div class="rarity-bar" style="width: 10%"></div><span data-i18n="planes.legendary">Legendary</span></div>
                 </div>
                 <div class="plane-card tier-6" data-tier="ace" onclick="showPlaneDetail(this)">
+                    <div class="plane-img-wrap"><img src="assets/images/planes.svg" alt="Ace" class="plane-img"></div>
                     <div class="plane-tier" data-i18n="planes.t6.tier">ACE</div>
-                    <div class="plane-icon">✈</div>
                     <div class="plane-stats">
                         <div class="plane-return"><span>300%</span> <small data-i18n="planes.return">Return</small></div>
                         <div class="plane-ftt">2,430,000 FTT</div>
                     </div>
-                    <div class="plane-rarity">
-                        <div class="rarity-bar" style="width: 4%"></div>
-                        <span data-i18n="planes.mythic">Mythic</span>
-                    </div>
+                    <div class="plane-rarity"><div class="rarity-bar" style="width: 4%"></div><span data-i18n="planes.mythic">Mythic</span></div>
                 </div>
                 <div class="plane-card tier-7" data-tier="legendary" onclick="showPlaneDetail(this)">
+                    <div class="plane-img-wrap"><img src="assets/images/planes.svg" alt="Legendary" class="plane-img"></div>
                     <div class="plane-tier" data-i18n="planes.t7.tier">LEGENDARY</div>
-                    <div class="plane-icon">✈</div>
                     <div class="plane-stats">
                         <div class="plane-return"><span>350%</span> <small data-i18n="planes.return">Return</small></div>
                         <div class="plane-ftt">7,290,000 FTT</div>
                     </div>
-                    <div class="plane-rarity">
-                        <div class="rarity-bar" style="width: 1%"></div>
-                        <span data-i18n="planes.supreme">Supreme</span>
-                    </div>
+                    <div class="plane-rarity"><div class="rarity-bar" style="width: 1%"></div><span data-i18n="planes.supreme">Supreme</span></div>
                 </div>
             </div>
             <div class="planes-models">
@@ -370,10 +348,8 @@
     <!-- Plane Detail Modal -->
     <div class="modal-overlay" id="planeModal">
         <div class="modal modal-lg">
-            <button class="modal-close" id="planeModalClose">✕</button>
-            <div class="plane-detail" id="planeDetail">
-                <!-- Filled by JS -->
-            </div>
+            <button class="modal-close" id="planeModalClose">&times;</button>
+            <div class="plane-detail" id="planeDetail"></div>
         </div>
     </div>
 
@@ -387,29 +363,15 @@
             </div>
             <div class="token-grid">
                 <div class="token-info">
-                    <div class="token-detail">
-                        <span class="token-label" data-i18n="token.supply">Total Supply</span>
-                        <span class="token-value">500,000,000,000</span>
-                    </div>
-                    <div class="token-detail">
-                        <span class="token-label" data-i18n="token.initial">Initial Price</span>
-                        <span class="token-value">0.0025 USDT</span>
-                    </div>
-                    <div class="token-detail">
-                        <span class="token-label" data-i18n="token.chain">Blockchain</span>
-                        <span class="token-value">Solana</span>
-                    </div>
-                    <div class="token-detail">
-                        <span class="token-label" data-i18n="token.security">Security</span>
-                        <span class="token-value" data-i18n="token.security.val">Zero-Knowledge Proof</span>
-                    </div>
+                    <div class="token-detail"><span class="token-label" data-i18n="token.supply">Total Supply</span><span class="token-value">500,000,000,000</span></div>
+                    <div class="token-detail"><span class="token-label" data-i18n="token.initial">Initial Price</span><span class="token-value">0.0025 USDT</span></div>
+                    <div class="token-detail"><span class="token-label" data-i18n="token.chain">Blockchain</span><span class="token-value">Solana</span></div>
+                    <div class="token-detail"><span class="token-label" data-i18n="token.security">Security</span><span class="token-value" data-i18n="token.security.val">Zero-Knowledge Proof</span></div>
                 </div>
                 <div class="token-chart">
                     <div class="donut-chart" id="donutChart">
                         <canvas id="tokenCanvas" width="240" height="240"></canvas>
-                        <div class="donut-center">
-                            <span class="donut-label">FTT</span>
-                        </div>
+                        <div class="donut-center"><span class="donut-label">FTT</span></div>
                     </div>
                     <div class="chart-legend">
                         <div class="legend-item" data-seg="eco"><span class="dot" style="background:#d4af37"></span> <span data-i18n="token.eco">Ecosystem Output</span> <strong>70%</strong></div>
@@ -423,7 +385,7 @@
         </div>
     </section>
 
-    <!-- Earnings Calculator Section -->
+    <!-- Earnings Calculator -->
     <section class="section" id="calculator">
         <div class="container">
             <div class="section-header">
@@ -433,74 +395,16 @@
             </div>
             <div class="calculator-container">
                 <div class="calc-inputs">
-                    <div class="calc-group">
-                        <label data-i18n="calc.plane">Fighter Plane Tier</label>
-                        <select id="calcPlane">
-                            <option value="0">Falcon (10,000 FTT / 125%)</option>
-                            <option value="1">Iron Wing (30,000 FTT / 150%)</option>
-                            <option value="2" selected>Elite (90,000 FTT / 180%)</option>
-                            <option value="3">Glory (270,000 FTT / 200%)</option>
-                            <option value="4">Hero (810,000 FTT / 250%)</option>
-                            <option value="5">Ace (2,430,000 FTT / 300%)</option>
-                            <option value="6">Legendary (7,290,000 FTT / 350%)</option>
-                        </select>
-                    </div>
-                    <div class="calc-group">
-                        <label data-i18n="calc.rank">Military Rank</label>
-                        <select id="calcRank">
-                            <option value="1">Private (+1%)</option>
-                            <option value="8">Corporal (+8%)</option>
-                            <option value="12">Sergeant (+12%)</option>
-                            <option value="18" selected>Master Sergeant (+18%)</option>
-                            <option value="22">Lieutenant (+22%)</option>
-                            <option value="30">Captain (+30%)</option>
-                            <option value="38">Major (+38%)</option>
-                            <option value="45">Colonel (+45%)</option>
-                            <option value="51">Brigadier General (+51%)</option>
-                            <option value="60">Major General (+60%)</option>
-                            <option value="70">Lieutenant General (+70%)</option>
-                            <option value="80">Five-Star General (+80%)</option>
-                        </select>
-                    </div>
-                    <div class="calc-group">
-                        <label data-i18n="calc.corps">Corps Level</label>
-                        <select id="calcCorps">
-                            <option value="0">No Corps (0%)</option>
-                            <option value="40">Level 1 (+40%)</option>
-                            <option value="60">Level 2 (+60%)</option>
-                            <option value="80" selected>Level 3 (+80%)</option>
-                            <option value="100">Level 4 (+100%)</option>
-                            <option value="130">Level 5 (+130%)</option>
-                            <option value="160">Level 6 (+160%)</option>
-                            <option value="180">Level 7 (+180%)</option>
-                            <option value="220">Level 8 (+220%)</option>
-                            <option value="260">Level 9 (+260%)</option>
-                            <option value="320">Level 10 (+320%)</option>
-                        </select>
-                    </div>
-                    <div class="calc-group">
-                        <label data-i18n="calc.planes">Number of Planes</label>
-                        <input type="number" id="calcCount" value="3" min="1" max="100">
-                    </div>
+                    <div class="calc-group"><label data-i18n="calc.plane">Fighter Plane Tier</label><select id="calcPlane"><option value="0">Falcon (10,000 FTT / 125%)</option><option value="1">Iron Wing (30,000 FTT / 150%)</option><option value="2" selected>Elite (90,000 FTT / 180%)</option><option value="3">Glory (270,000 FTT / 200%)</option><option value="4">Hero (810,000 FTT / 250%)</option><option value="5">Ace (2,430,000 FTT / 300%)</option><option value="6">Legendary (7,290,000 FTT / 350%)</option></select></div>
+                    <div class="calc-group"><label data-i18n="calc.rank">Military Rank</label><select id="calcRank"><option value="1">Private (+1%)</option><option value="8">Corporal (+8%)</option><option value="12">Sergeant (+12%)</option><option value="18" selected>Master Sergeant (+18%)</option><option value="22">Lieutenant (+22%)</option><option value="30">Captain (+30%)</option><option value="38">Major (+38%)</option><option value="45">Colonel (+45%)</option><option value="51">Brigadier General (+51%)</option><option value="60">Major General (+60%)</option><option value="70">Lieutenant General (+70%)</option><option value="80">Five-Star General (+80%)</option></select></div>
+                    <div class="calc-group"><label data-i18n="calc.corps">Corps Level</label><select id="calcCorps"><option value="0">No Corps (0%)</option><option value="40">Level 1 (+40%)</option><option value="60">Level 2 (+60%)</option><option value="80" selected>Level 3 (+80%)</option><option value="100">Level 4 (+100%)</option><option value="130">Level 5 (+130%)</option><option value="160">Level 6 (+160%)</option><option value="180">Level 7 (+180%)</option><option value="220">Level 8 (+220%)</option><option value="260">Level 9 (+260%)</option><option value="320">Level 10 (+320%)</option></select></div>
+                    <div class="calc-group"><label data-i18n="calc.planes">Number of Planes</label><input type="number" id="calcCount" value="3" min="1" max="100"></div>
                 </div>
                 <div class="calc-results">
-                    <div class="calc-result-card">
-                        <div class="calc-result-label" data-i18n="calc.daily">Daily FTT Earnings</div>
-                        <div class="calc-result-value" id="calcDaily">0</div>
-                    </div>
-                    <div class="calc-result-card">
-                        <div class="calc-result-label" data-i18n="calc.monthly">Monthly FTT Earnings</div>
-                        <div class="calc-result-value" id="calcMonthly">0</div>
-                    </div>
-                    <div class="calc-result-card featured">
-                        <div class="calc-result-label" data-i18n="calc.value">Est. Monthly USDT Value</div>
-                        <div class="calc-result-value" id="calcUSDT">$0</div>
-                        <div class="calc-result-note" data-i18n="calc.note">Based on initial price 0.0025 USDT</div>
-                    </div>
-                    <div class="calc-result-card">
-                        <div class="calc-result-label" data-i18n="calc.total.return">Total Return Rate</div>
-                        <div class="calc-result-value" id="calcReturn">0%</div>
-                    </div>
+                    <div class="calc-result-card"><div class="calc-result-label" data-i18n="calc.daily">Daily FTT Earnings</div><div class="calc-result-value" id="calcDaily">0</div></div>
+                    <div class="calc-result-card"><div class="calc-result-label" data-i18n="calc.monthly">Monthly FTT Earnings</div><div class="calc-result-value" id="calcMonthly">0</div></div>
+                    <div class="calc-result-card featured"><div class="calc-result-label" data-i18n="calc.value">Est. Monthly USDT Value</div><div class="calc-result-value" id="calcUSDT">$0</div><div class="calc-result-note" data-i18n="calc.note">Based on initial price 0.0025 USDT</div></div>
+                    <div class="calc-result-card"><div class="calc-result-label" data-i18n="calc.total.return">Total Return Rate</div><div class="calc-result-value" id="calcReturn">0%</div></div>
                 </div>
             </div>
         </div>
@@ -516,7 +420,7 @@
             </div>
             <div class="dual-system">
                 <div class="system-card">
-                    <div class="system-icon">🎖️</div>
+                    <div class="system-icon-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3 6 6 1-4 4 1 6-6-3-6 3 1-6-4-4 6-1z"/></svg></div>
                     <h3 data-i18n="ranks.personal.title">Personal Rank System</h3>
                     <p data-i18n="ranks.personal.desc">Rise through military ranks from Private to Five-Star General. Each rank increases your daily FTT production acceleration from 1% up to 80%.</p>
                     <div class="rank-table">
@@ -527,7 +431,7 @@
                     </div>
                 </div>
                 <div class="system-card">
-                    <div class="system-icon">⚔️</div>
+                    <div class="system-icon-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
                     <h3 data-i18n="ranks.corps.title">Corps System</h3>
                     <p data-i18n="ranks.corps.desc">Form or join a corps to unlock collective acceleration. Corps levels 1-10 provide bonus acceleration from 40% up to 320% for members.</p>
                     <div class="rank-table">
@@ -538,14 +442,10 @@
                     </div>
                 </div>
             </div>
-            <div class="rank-gallery">
-                <img src="assets/images/gameplay-ranks.jpg" alt="Rank System Details" loading="lazy">
-                <img src="assets/images/gameplay-planes.jpg" alt="Plane Tier Details" loading="lazy">
-            </div>
         </div>
     </section>
 
-    <!-- Roadmap Section -->
+    <!-- Roadmap -->
     <section class="section" id="roadmap">
         <div class="container">
             <div class="section-header">
@@ -553,46 +453,16 @@
                 <h2 class="section-title" data-i18n="roadmap.title">Development Timeline</h2>
             </div>
             <div class="timeline">
-                <div class="timeline-item active">
-                    <div class="timeline-date">Q3 2025</div>
-                    <div class="timeline-content">
-                        <h3 data-i18n="roadmap.q3.title">Game Launch</h3>
-                        <p data-i18n="roadmap.q3.desc">Digital Museum & Flying Tiger Heart NFT game go live. War Digital Museum opens for exploration.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Sep 2025</div>
-                    <div class="timeline-content">
-                        <h3 data-i18n="roadmap.sep.title">Flying Tiger Town Unveiling</h3>
-                        <p data-i18n="roadmap.sep.desc">Monument unveiling ceremony in Monroe, Louisiana — hometown of the Flying Tigers. 75-hectare RWA development begins.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Q4 2025</div>
-                    <div class="timeline-content">
-                        <h3 data-i18n="roadmap.q4.title">Commercial Application</h3>
-                        <p data-i18n="roadmap.q4.desc">FTT commercial applications launch. Market value management and in-game trading marketplace activated.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Q1 2026</div>
-                    <div class="timeline-content">
-                        <h3 data-i18n="roadmap.q1.title">Global IP Operations</h3>
-                        <p data-i18n="roadmap.q1.desc">Digital IP full-domain operations. Listing on TOP global exchanges for compliant trading.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date" data-i18n="roadmap.future.date">FUTURE</div>
-                    <div class="timeline-content">
-                        <h3 data-i18n="roadmap.future.title">Game Expansion Eras</h3>
-                        <p data-i18n="roadmap.future.desc">Jet Dawn (1947-1975) → Stealth Era (1980-1999) → Future Battlefield (2025+). From WWII propellers to 6th-gen fighters and space control.</p>
-                    </div>
-                </div>
+                <div class="timeline-item active"><div class="timeline-date">Phase 1</div><div class="timeline-content"><h3 data-i18n="roadmap.q3.title">Game Launch</h3><p data-i18n="roadmap.q3.desc">Digital Museum and Flying Tiger Heart NFT game go live. War Digital Museum opens for exploration.</p></div></div>
+                <div class="timeline-item"><div class="timeline-date">Phase 2</div><div class="timeline-content"><h3 data-i18n="roadmap.sep.title">Flying Tiger Town Unveiling</h3><p data-i18n="roadmap.sep.desc">Monument unveiling ceremony in Monroe, Louisiana — hometown of the Flying Tigers. 75-hectare RWA development begins.</p></div></div>
+                <div class="timeline-item"><div class="timeline-date">Phase 3</div><div class="timeline-content"><h3 data-i18n="roadmap.q4.title">Commercial Application</h3><p data-i18n="roadmap.q4.desc">FTT commercial applications launch. Market value management and in-game trading marketplace activated.</p></div></div>
+                <div class="timeline-item"><div class="timeline-date">Phase 4</div><div class="timeline-content"><h3 data-i18n="roadmap.q1.title">Global IP Operations</h3><p data-i18n="roadmap.q1.desc">Digital IP full-domain operations. Listing on TOP global exchanges for compliant trading.</p></div></div>
+                <div class="timeline-item"><div class="timeline-date" data-i18n="roadmap.future.date">FUTURE</div><div class="timeline-content"><h3 data-i18n="roadmap.future.title">Game Expansion Eras</h3><p data-i18n="roadmap.future.desc">Jet Dawn (1947-1975), Stealth Era (1980-1999), Future Battlefield (2025+). From WWII propellers to 6th-gen fighters and space control.</p></div></div>
             </div>
         </div>
     </section>
 
-    <!-- Pre-sale Section -->
+    <!-- Pre-sale -->
     <section class="section section-dark" id="presale">
         <div class="container">
             <div class="section-header">
@@ -602,7 +472,7 @@
             </div>
             <div class="presale-grid">
                 <div class="presale-card">
-                    <div class="presale-rank">★</div>
+                    <div class="presale-rank-stars">&#9733;</div>
                     <h3 data-i18n="presale.major">Major General</h3>
                     <div class="presale-price">$2,000 <small>USDT</small></div>
                     <div class="presale-limit" data-i18n="presale.major.limit">50 Units Available</div>
@@ -618,7 +488,7 @@
                 </div>
                 <div class="presale-card presale-featured">
                     <div class="presale-badge" data-i18n="presale.popular">MOST POPULAR</div>
-                    <div class="presale-rank">★★</div>
+                    <div class="presale-rank-stars">&#9733;&#9733;</div>
                     <h3 data-i18n="presale.lt">Lieutenant General</h3>
                     <div class="presale-price">$5,000 <small>USDT</small></div>
                     <div class="presale-limit" data-i18n="presale.lt.limit">20 Units Available</div>
@@ -634,7 +504,7 @@
                     <button class="btn btn-primary btn-block" data-i18n="presale.reserve">Reserve Now</button>
                 </div>
                 <div class="presale-card">
-                    <div class="presale-rank">★★★</div>
+                    <div class="presale-rank-stars">&#9733;&#9733;&#9733;</div>
                     <h3 data-i18n="presale.gen">General</h3>
                     <div class="presale-price">$15,000 <small>USDT</small></div>
                     <div class="presale-limit" data-i18n="presale.gen.limit">10 Units Available</div>
@@ -651,55 +521,29 @@
                 </div>
             </div>
 
-            <!-- Pre-Registration Form -->
+            <!-- Registration Form -->
             <div class="register-section" id="register">
                 <h3 data-i18n="register.title">Pre-Register Now</h3>
                 <p data-i18n="register.desc">Secure your spot and receive launch notifications, exclusive airdrops, and early access.</p>
                 <form class="register-form" id="registerForm">
                     <div class="form-row">
-                        <div class="form-group">
-                            <label data-i18n="register.name">Name / Nickname</label>
-                            <input type="text" id="regName" required placeholder="Enter your name">
-                        </div>
-                        <div class="form-group">
-                            <label data-i18n="register.email">Email</label>
-                            <input type="email" id="regEmail" required placeholder="your@email.com">
-                        </div>
+                        <div class="form-group"><label data-i18n="register.name">Name / Nickname</label><input type="text" id="regName" required placeholder="Enter your name"></div>
+                        <div class="form-group"><label data-i18n="register.email">Email</label><input type="email" id="regEmail" required placeholder="your@email.com"></div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group">
-                            <label data-i18n="register.telegram">Telegram Username</label>
-                            <input type="text" id="regTelegram" placeholder="@username">
-                        </div>
-                        <div class="form-group">
-                            <label data-i18n="register.tier">Interested Tier</label>
-                            <select id="regTier">
-                                <option value="individual" data-i18n="presale.individual">Individual (75 USDT)</option>
-                                <option value="member" data-i18n="presale.member">Member (150 USDT)</option>
-                                <option value="team" data-i18n="presale.team">Team (500 USDT)</option>
-                                <option value="council" data-i18n="presale.council">Council (2,500 USDT)</option>
-                                <option value="major">Major General ($2,000)</option>
-                                <option value="lt">Lieutenant General ($5,000)</option>
-                                <option value="general">General ($15,000)</option>
-                            </select>
-                        </div>
+                        <div class="form-group"><label data-i18n="register.telegram">Telegram Username</label><input type="text" id="regTelegram" placeholder="@username"></div>
+                        <div class="form-group"><label data-i18n="register.tier">Interested Tier</label><select id="regTier"><option value="individual">Individual (75 USDT)</option><option value="member">Member (150 USDT)</option><option value="team">Team (500 USDT)</option><option value="council">Council (2,500 USDT)</option><option value="major">Major General ($2,000)</option><option value="lt">Lieutenant General ($5,000)</option><option value="general">General ($15,000)</option></select></div>
                     </div>
-                    <div class="form-group">
-                        <label data-i18n="register.wallet">Solana Wallet Address (Optional)</label>
-                        <input type="text" id="regWallet" placeholder="Enter Solana wallet address">
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg" data-i18n="register.submit">🚀 Complete Pre-Registration</button>
+                    <div class="form-group"><label data-i18n="register.wallet">Solana Wallet Address (Optional)</label><input type="text" id="regWallet" placeholder="Enter Solana wallet address"></div>
+                    <button type="submit" class="btn btn-primary btn-lg" data-i18n="register.submit">Complete Pre-Registration</button>
                 </form>
                 <div class="register-success" id="registerSuccess" style="display:none;">
-                    <div class="success-icon">✅</div>
+                    <div class="success-check">&#10003;</div>
                     <h3 data-i18n="register.success.title">Registration Complete!</h3>
                     <p data-i18n="register.success.desc">Welcome to the Flying Tiger family. You'll receive launch updates and exclusive airdrop notifications.</p>
                     <div class="success-id">ID: <span id="regId"></span></div>
                 </div>
-                <div class="register-counter">
-                    <span data-i18n="register.counter">Registered pilots:</span>
-                    <strong id="regCounter">2,847</strong>
-                </div>
+                <div class="register-counter"><span data-i18n="register.counter">Registered pilots:</span> <strong id="regCounter">2,847</strong></div>
             </div>
         </div>
     </section>
@@ -709,7 +553,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <span class="logo-icon">✦</span>
+                    <span class="logo-icon">FTT</span>
                     <span class="logo-text">FLYING TIGER HEART</span>
                     <p data-i18n="footer.desc">A Web3 strategy game commemorating the 80th anniversary of WWII victory. Powered by Flying Tiger Technology USA INC.</p>
                 </div>
@@ -728,7 +572,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 Flying Tiger Technology USA INC. All rights reserved.</p>
+                <p>&copy; 2025 Flying Tiger Technology USA INC. All rights reserved.</p>
                 <p data-i18n="footer.note">Dedicated to the memory of the Flying Tigers and the enduring friendship between China and the United States.</p>
             </div>
         </div>
